@@ -11,7 +11,7 @@ class Gallery extends StatelessWidget {
         centerTitle: true,
         titleTextStyle: const TextStyle(fontSize: 30),
       ),
-      body: Row(
+      body: Column(
         children: <Widget>[
           _gallery('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'),
           _gallery('https://images.pexels.com/photos/36744/agriculture-arable-clouds-countryside.jpg?auto=compress&cs=tinysrgb&h=650&w=940'),
@@ -24,17 +24,20 @@ class Gallery extends StatelessWidget {
   }
 
   Widget _gallery(url) {
-    return Column(
+    return Expanded(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           FadeInImage(
             placeholder: const AssetImage('assets/jar-loading.gif'),
             image: NetworkImage(url),
             fadeInDuration: const Duration(milliseconds: 100),
-            height: 250.0,
-            fit: BoxFit.cover,
+            height: 400.0,
+            width: 380.0,
+            fit: BoxFit.fitWidth,
           ),
       ],
+    ),
     );
   }
 }
