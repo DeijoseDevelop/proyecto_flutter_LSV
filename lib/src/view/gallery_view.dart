@@ -11,51 +11,30 @@ class Gallery extends StatelessWidget {
         centerTitle: true,
         titleTextStyle: const TextStyle(fontSize: 30),
       ),
-      body: _gallery(),
+      body: Row(
+        children: <Widget>[
+          _gallery('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'),
+          _gallery('https://images.pexels.com/photos/36744/agriculture-arable-clouds-countryside.jpg?auto=compress&cs=tinysrgb&h=650&w=940'),
+          _gallery('https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'),
+          _gallery('https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'),
+          _gallery('https://images.pexels.com/photos/1192057/pexels-photo-1192057.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'),
+        ],
+      ),
     );
   }
 
-  Widget _gallery() {
-    return Container(
-      child: Column(
-      children: const <Widget>[
-         FadeInImage(
-          placeholder: AssetImage('assets/jar-loading.gif'),
-          image: NetworkImage('assets/pexels-christina-morillo-1181271.jpg'),
-          fadeInDuration: Duration(milliseconds: 200),
-          height: 250.0,
-          fit: BoxFit.cover,
-        ),
-        FadeInImage(
-          placeholder: AssetImage('assets/jar-loading.gif'),
-          image: NetworkImage('assets/pexels-mike-1192057(1).jpg'),
-          fadeInDuration: Duration(milliseconds: 200),
-          height: 250.0,
-          fit: BoxFit.cover,
-        ),
-        FadeInImage(
-          placeholder: AssetImage('assets/jar-loading.gif'),
-          image: NetworkImage('assets/pexels-nitin-dhumal-46710.jpg'),
-          fadeInDuration: Duration(milliseconds: 200),
-          height: 250.0,
-          fit: BoxFit.cover,
-        ),
-        FadeInImage(
-          placeholder: AssetImage('assets/jar-loading.gif'),
-          image: NetworkImage('assets/pexels-pixabay-36744.jpg'),
-          fadeInDuration: Duration(milliseconds: 200),
-          height: 250.0,
-          fit: BoxFit.cover,
-        ),
-        FadeInImage(
-          placeholder: AssetImage('jar-loading.gif'),
-          image: NetworkImage('pexels-pixabay-417173.jpg'),
-          fadeInDuration: Duration(milliseconds: 200),
-          height: 250.0,
-          fit: BoxFit.cover,
-        ),
+  Widget _gallery(url) {
+    return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          FadeInImage(
+            placeholder: const AssetImage('assets/jar-loading.gif'),
+            image: NetworkImage(url),
+            fadeInDuration: const Duration(milliseconds: 100),
+            height: 250.0,
+            fit: BoxFit.cover,
+          ),
       ],
-    ),
     );
   }
 }
