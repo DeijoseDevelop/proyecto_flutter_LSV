@@ -43,15 +43,15 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Colors.blue,
-            textColor: Colors.white,
+            color: Color.fromRGBO(28, 228, 21, 1),
+            textColor: Colors.black,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url2']),
             child: const Text('Image two'),
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Colors.blue,
+            color: Color.fromARGB(255, 218, 18, 18),
             textColor: Colors.white,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url3']),
@@ -59,7 +59,7 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Colors.blue,
+            color: Color.fromARGB(255, 7, 5, 168),
             textColor: Colors.white,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url4']),
@@ -67,8 +67,8 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Colors.blue,
-            textColor: Colors.white,
+            color: Color.fromARGB(255, 229, 243, 33),
+            textColor: Colors.black,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url5']),
             child: const Text('Image five'),
