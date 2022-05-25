@@ -23,10 +23,12 @@ class AlertView extends StatelessWidget {
         centerTitle: true,
         titleTextStyle: const TextStyle(fontSize: 30),
       ),
-      body: Container(
-          margin: const EdgeInsets.only(left: 100.0, right: 100.0,),
+      body: Center(
+        child: Container(
+          width: 150.0,
           child: _list(context, urls)
         ),
+      ),
       );
   }
 
