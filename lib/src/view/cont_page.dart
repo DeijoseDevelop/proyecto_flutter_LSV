@@ -14,7 +14,7 @@ class _ContPageState extends State<ContPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cont Page'),
+        title: const Text('First App in Flutter'),
         centerTitle: true,
         titleTextStyle: const TextStyle(fontSize: 30),
       ),
@@ -32,19 +32,24 @@ class _ContPageState extends State<ContPage> {
   }
 
   Widget _createButtons() {
-    return Row(mainAxisAlignment: MainAxisAlignment.end, children: <Widget>[
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
       const SizedBox(width: 20),
       FloatingActionButton(
+        heroTag: 'btn1',
         onPressed: _zero,
         child: const Icon(Icons.exposure_zero),
       ),
       const Expanded(child: SizedBox(width: 5)),
       FloatingActionButton(
+        heroTag: 'btn2',
         onPressed: _remove,
         child: const Icon(Icons.remove),
       ),
       const SizedBox(width: 10),
       FloatingActionButton(
+        heroTag: 'btn3',
         onPressed: _add,
         child: const Icon(Icons.add),
       ),
