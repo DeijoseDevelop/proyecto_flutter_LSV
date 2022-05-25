@@ -6,6 +6,7 @@ import 'package:final_project_of_mobile/src/view/counter_view.dart';
 import 'package:final_project_of_mobile/src/view/count_screen.dart';
 import 'package:final_project_of_mobile/src/view/cont_page.dart';
 import 'package:final_project_of_mobile/src/view/gallery_view.dart';
+import 'package:final_project_of_mobile/src/view/alert_view.dart';
 
 
 Map<String, WidgetBuilder> getRoutes(){
@@ -15,5 +16,6 @@ Map<String, WidgetBuilder> getRoutes(){
     '/first': (BuildContext context) => const Counter(),
     '/task': (BuildContext context) => const CountScreen(),
     '/gallery': (BuildContext context) => const Gallery(),
+    '/alert': (BuildContext context) => const AlertView(),
   };
 }
