@@ -70,7 +70,7 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: const Color.fromARGB(255, 229, 243, 33),
+            color: const Color.fromRGBO(255, 229, 243, 33),
             textColor: Colors.black,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url5']),
