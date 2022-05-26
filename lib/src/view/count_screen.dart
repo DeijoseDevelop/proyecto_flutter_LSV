@@ -38,21 +38,21 @@ class _CountScreenState extends State<CountScreen> {
 
   Widget _createButtons() {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        const SizedBox(width: 20),
-        FloatingActionButton(
-          heroTag: 'btn1',
-          onPressed: _zero,
-          child: const Icon(Icons.exposure_zero),
-        ),
-        const Expanded(child: SizedBox(width: 5)),
+        const SizedBox(width: 30),
         FloatingActionButton(
           heroTag: 'btn2',
           onPressed: _remove,
           child: const Icon(Icons.remove),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(width: 40),
+        FloatingActionButton(
+          heroTag: 'btn1',
+          onPressed: _zero,
+          child: const Icon(Icons.restore),
+        ),
+        const SizedBox(width: 40),
         FloatingActionButton(
           heroTag: 'btn3',
           onPressed: _add,

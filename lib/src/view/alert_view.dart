@@ -8,6 +8,7 @@ class AlertView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+
     Map<String, String> urls = {
     'url1': 'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     'url2': 'https://images.pexels.com/photos/36744/agriculture-arable-clouds-countryside.jpg?auto=compress&cs=tinysrgb&h=650&w=940',
@@ -45,7 +46,7 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Color.fromRGBO(28, 228, 21, 1),
+            color: const Color.fromRGBO(28, 228, 21, 1),
             textColor: Colors.black,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url2']),
@@ -53,7 +54,7 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Color.fromARGB(255, 218, 18, 18),
+            color: const Color.fromRGBO(255, 218, 18, 18),
             textColor: Colors.white,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url3']),
@@ -61,7 +62,7 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Color.fromARGB(255, 7, 5, 168),
+            color: const Color.fromRGBO(255, 7, 5, 168),
             textColor: Colors.white,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url4']),
@@ -69,7 +70,7 @@ class AlertView extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           RaisedButton(
-            color: Color.fromARGB(255, 229, 243, 33),
+            color: const Color.fromARGB(255, 229, 243, 33),
             textColor: Colors.black,
             shape: const StadiumBorder(),
             onPressed: () => _showAlert(context, urls['url5']),
