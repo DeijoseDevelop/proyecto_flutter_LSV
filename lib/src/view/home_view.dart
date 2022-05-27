@@ -43,6 +43,11 @@ class HomeView extends StatelessWidget {
           title: const Text('Alert Galery'),
           onTap: () => Navigator.pushNamed(context, '/alert'),
         ),
+        ListTile(
+          leading: const Icon(Icons.change_circle),
+          title: const Text('Change Color'),
+          onTap: () => Navigator.pushNamed(context, '/changeColor'),
+        ),
       ],
     );
   }
