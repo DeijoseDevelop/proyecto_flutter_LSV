@@ -10,17 +10,17 @@ class ChangeColor extends StatefulWidget {
 
 class _ChangeColorState extends State<ChangeColor> {
   double _valueSlider = 100.0;
-  int color1 = 100;
-  int color2 = 100;
-  int color3 = 100;
-  int textColor1 = 255;
-  int textColor2 = 255;
-  int textColor3 = 255;
+  int _color1 = 200;
+  int _color2 = 200;
+  int _color3 = 200;
+  int _textColor1 = 255;
+  int _textColor2 = 255;
+  int _textColor3 = 255;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(color1, color2, color3, 1),
+      backgroundColor: Color.fromRGBO(_color1, _color2,  _color3, 1),
       appBar: AppBar(
         title: const Text('Change Color'),
         centerTitle: true,
@@ -30,7 +30,11 @@ class _ChangeColorState extends State<ChangeColor> {
         child: Column(
           children: <Widget>[
             _createSlider(),
-            Text('Hello World', style: TextStyle(color: Color.fromRGBO(textColor1, textColor2, textColor3, 1), fontSize: 50)),
+            Text('Hello World',
+                style: TextStyle(
+                    color: Color.fromRGBO(
+                        _textColor1, _textColor2, _textColor3, 1),
+                    fontSize: 50)),
           ],
         ),
       ),
@@ -48,12 +52,12 @@ class _ChangeColorState extends State<ChangeColor> {
       onChanged: (double value) {
         setState(() {
           _valueSlider = value;
-          color1 = Random().nextInt(255);
-          color2 = Random().nextInt(255);
-          color3 = Random().nextInt(255);
-          textColor1 = Random().nextInt(255);
-          textColor2 = Random().nextInt(255);
-          textColor3 = Random().nextInt(255);
+          _color1 = Random().nextInt(255);
+          _color2 = Random().nextInt(255);
+          _color3 = Random().nextInt(255);
+          _textColor1 = Random().nextInt(255);
+          _textColor2 = Random().nextInt(255);
+          _textColor3 = Random().nextInt(255);
         });
       },
     );

@@ -30,7 +30,7 @@ class HomeView extends StatelessWidget {
         ),
         ListTile(
           leading: const Icon(Icons.add_task),
-          title: const Text('Task Final'),
+          title: const Text('First Week Task'),
           onTap: () => Navigator.pushNamed(context, '/task'),
         ),
         ListTile(
@@ -47,6 +47,16 @@ class HomeView extends StatelessWidget {
           leading: const Icon(Icons.change_circle),
           title: const Text('Change Color'),
           onTap: () => Navigator.pushNamed(context, '/changeColor'),
+        ),
+        ListTile(
+          leading: const Icon(Icons.animation),
+          title: const Text('Animated Container'),
+          onTap: () => Navigator.pushNamed(context, '/animatedContainer'),
+        ),
+        ListTile(
+          leading: const Icon(Icons.list),
+          title: const Text('Second Week Task'),
+          onTap: () => Navigator.pushNamed(context, '/lista'),
         ),
       ],
     );
