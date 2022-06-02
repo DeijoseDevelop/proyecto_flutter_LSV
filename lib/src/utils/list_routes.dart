@@ -49,13 +49,6 @@ class Routes {
       ),
       const Divider(),
       ListTile(
-        leading: const Icon(Icons.animation),
-        title: const Text('Animated Container'),
-        onTap: () => Navigator.pushNamed(contexto, '/animatedContainer'),
-        trailing: const Icon(Icons.arrow_forward_ios),
-      ),
-      const Divider(),
-      ListTile(
         leading: const Icon(Icons.list),
         title: const Text('Second Week Task'),
         onTap: () => Navigator.pushNamed(contexto, '/lista'),

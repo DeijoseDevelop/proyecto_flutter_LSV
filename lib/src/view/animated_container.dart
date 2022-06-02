@@ -17,10 +17,6 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Animated Container'),
-          centerTitle: true,
-        ),
         body: Center(
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 400),
@@ -36,16 +32,17 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
         floatingActionButton: FloatingActionButton(
           onPressed: _changeForm,
           child: const Icon(Icons.play_arrow),
-        )
-    );
+        ));
   }
 
   void _changeForm() {
     setState(() {
       _width = Random().nextInt(300).toDouble();
       _height = Random().nextInt(300).toDouble();
-      _color = Color.fromRGBO(Random().nextInt(300), Random().nextInt(300),
-          Random().nextInt(300), 1);
+      _color = Color.fromRGBO(
+        Random().nextInt(300),
+        Random().nextInt(300),
+        Random().nextInt(300), 1);
       _borderRadius = BorderRadius.circular(Random().nextInt(100).toDouble());
     });
   }
