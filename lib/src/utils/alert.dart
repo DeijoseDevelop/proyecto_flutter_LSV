@@ -14,6 +14,15 @@ void showAlert(BuildContext context, String name, String url){
         ),
         actions: <Widget>[
           TextButton(
+            child: const Text('Cancel'),
+            style: TextButton.styleFrom(
+              primary: Colors.red,
+            ),
+            onPressed: (){
+              Navigator.of(context).pop();
+            },
+          ),
+          TextButton(
             child: const Text('Ok'),
             onPressed: (){
               Navigator.of(context).pop();
