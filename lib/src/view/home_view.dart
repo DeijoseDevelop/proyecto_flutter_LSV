@@ -26,7 +26,7 @@ class HomeView extends StatelessWidget {
                 content: Text(
                   'Hello new user, click on the play menu to see the animation or on the hamburger menu to navigate.',
                   style: TextStyle(
-                      color: Colors.green,
+                      color: Colors.blue,
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold),
                 ),
