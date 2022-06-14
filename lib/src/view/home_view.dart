@@ -19,16 +19,18 @@ class HomeView extends StatelessWidget {
         titleTextStyle: const TextStyle(fontSize: 30.0),
         actions: <Widget>[
           IconButton(
-            icon: const Icon(Icons.add_alert),
+            icon: const Icon(Icons.live_help),
             tooltip: 'Show Snackbar',
             onPressed: () {
-               ScaffoldMessenger.of(context).showSnackBar(
-                 const SnackBar(
-                   content: Text('Hello new user, click on the play menu to see the animation or on the hamburger menu to navigate.',
-                   style: TextStyle(color: Colors.green, fontSize: 20.0, fontWeight: FontWeight.bold),
-                   ),
-                  )
-               );
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                content: Text(
+                  'Hello new user, click on the play menu to see the animation or on the hamburger menu to navigate.',
+                  style: TextStyle(
+                      color: Colors.green,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                ),
+              ));
             },
           ),
         ],

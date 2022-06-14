@@ -55,6 +55,20 @@ class Routes {
         trailing: const Icon(Icons.arrow_forward_ios),
       ),
       const Divider(),
+      ListTile(
+        leading: const Icon(Icons.list_alt),
+        title: const Text('Second Week Task Final'),
+        onTap: () => Navigator.pushNamed(contexto, '/listaFirebase'),
+        trailing: const Icon(Icons.arrow_forward_ios),
+      ),
+      const Divider(),
+      ListTile(
+        leading: const Icon(Icons.list_sharp),
+        title: const Text('Second Week Task Final version 2'),
+        onTap: () => Navigator.pushNamed(contexto, '/listaFirebase2'),
+        trailing: const Icon(Icons.arrow_forward_ios),
+      ),
+      const Divider(),
     ];
   }
 }
