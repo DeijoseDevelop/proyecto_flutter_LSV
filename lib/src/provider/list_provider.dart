@@ -5,7 +5,7 @@ import 'package:final_project_of_mobile/src/utils/card.dart';
 import 'package:flutter/material.dart';
 
 class ListProvider {
-  static Widget showLista(List<dynamic> data, BuildContext context) {
+  static ListView showLista(List<dynamic> data, BuildContext context) {
     return ListView.builder(
         scrollDirection: Axis.vertical,
         shrinkWrap: true,

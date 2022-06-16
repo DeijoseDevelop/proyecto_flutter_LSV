@@ -1,3 +1,4 @@
+import 'package:final_project_of_mobile/src/view/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 // my imports

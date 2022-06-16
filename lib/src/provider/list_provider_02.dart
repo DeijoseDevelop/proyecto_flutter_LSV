@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ListProvider02{
   ListProvider02();
 
-  static Widget showList(BuildContext context, List<dynamic> registros){
+  static ListView showList(BuildContext context, List<dynamic> registros){
     return ListView.builder(
       scrollDirection: Axis.vertical,
       shrinkWrap: true,
@@ -13,15 +13,15 @@ class ListProvider02{
         return Column(
           children: <Widget>[
             ListTile(
-            title: Text(registros[index].nombre!),
-            subtitle: Text(registros[index].apellido!),
-            leading: CircleAvatar(
-              backgroundImage: NetworkImage(registros[index].image!),
-            ),
-            onTap: () {
-              showDialogFirebase(context, registros[index]);
-            },
-            trailing: const Icon(Icons.keyboard_arrow_right),
+              title: Text(registros[index].nombre!),
+              subtitle: Text(registros[index].apellido!),
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(registros[index].image!),
+              ),
+              onTap: () {
+                showDialogFirebase(context, registros[index]);
+              },
+              trailing: const Icon(Icons.keyboard_arrow_right),
             )
           ]
         );

@@ -16,7 +16,7 @@ class FirebaseList extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Registros'),
+        title: const Text('Lista de Registros'),
         centerTitle: true,
       ),
       body: DataProvider().futureBuilder(

@@ -2,7 +2,6 @@
 
 import 'package:final_project_of_mobile/src/entities/registros.dart';
 import 'package:final_project_of_mobile/src/entities/response_firebase.dart';
-import 'package:final_project_of_mobile/src/view/firebase_list.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'dart:convert';
 
@@ -24,8 +23,10 @@ class FirebaseConnection {
   Future<Registros> getOneRegistro(id) async {
     DatabaseReference _database = instanceFirebase();
     DataSnapshot snapshot = await _database.child('/$id').get();
-    final data = snapshot.value as Map<String?, dynamic>;
-    Registros registro = Registros.fromJson(data);
+    final string = json.encode(snapshot);
+    final data = json.decode(string);
+    final registers = data;
+    Registros registro = Registros.fromJson(registers);
     return registro;
   }
 }

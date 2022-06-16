@@ -11,11 +11,12 @@ import 'package:final_project_of_mobile/src/view/change_color.dart';
 import 'package:final_project_of_mobile/src/view/activity_list_page.dart';
 import 'package:final_project_of_mobile/src/view/firebase_list.dart';
 import 'package:final_project_of_mobile/src/view/firebase_list_02.dart';
+import 'package:final_project_of_mobile/src/view/splash/splash_screen.dart';
 
 
 Map<String, WidgetBuilder> getRoutes(){
   return <String, WidgetBuilder>{
-    '/': (BuildContext context) => const HomeView(),
+    '/': (BuildContext context) => const SplashScreen(),
     '/app': (BuildContext context) => const ContPage(),
     '/first': (BuildContext context) => const Counter(),
     '/task': (BuildContext context) => const CountScreen(),
