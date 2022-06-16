@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ListProvider02{
   ListProvider02();
 
-  static Widget showList(BuildContext context, List<dynamic> registros){
+  static ListView showList(BuildContext context, List<dynamic> registros){
     return ListView.builder(
       scrollDirection: Axis.vertical,
       shrinkWrap: true,

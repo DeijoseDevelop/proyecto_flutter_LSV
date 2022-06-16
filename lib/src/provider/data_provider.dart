@@ -11,11 +11,7 @@ class DataProvider {
       initialData: const [],
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.hasData) {
-          return ListView(
-            children: <Widget>[
-              ListProvider.showLista(snapshot.data, context),
-            ]
-          );
+          return ListProvider.showLista(snapshot.data, context);
         } else {
           return const Center(
             child: CircularProgressIndicator(),
