@@ -9,14 +9,14 @@ import 'package:final_project_of_mobile/src/view/gallery_view.dart';
 import 'package:final_project_of_mobile/src/view/alert_view.dart';
 import 'package:final_project_of_mobile/src/view/change_color.dart';
 import 'package:final_project_of_mobile/src/view/activity_list_page.dart';
-import 'package:final_project_of_mobile/src/view/firebase_list.dart';
-import 'package:final_project_of_mobile/src/view/firebase_list_02.dart';
-import 'package:final_project_of_mobile/src/view/splash/splash_screen.dart';
+import 'package:final_project_of_mobile/src/view/semana_2/firebase_list.dart';
+import 'package:final_project_of_mobile/src/view/semana_2/firebase_list_02.dart';
+import 'package:final_project_of_mobile/src/view/semana_3/splash/splash_screen.dart';
 
 
 Map<String, WidgetBuilder> getRoutes(){
   return <String, WidgetBuilder>{
-    '/': (BuildContext context) => const SplashScreen(),
+    '/': (BuildContext context) => const SplashScreenView(),
     '/app': (BuildContext context) => const ContPage(),
     '/first': (BuildContext context) => const Counter(),
     '/task': (BuildContext context) => const CountScreen(),

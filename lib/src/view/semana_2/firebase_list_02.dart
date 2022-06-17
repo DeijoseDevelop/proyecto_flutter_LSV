@@ -1,6 +1,4 @@
 import 'package:final_project_of_mobile/src/domain/firebase_connection.dart';
-import 'package:final_project_of_mobile/src/entities/registros.dart';
-import 'package:final_project_of_mobile/src/entities/response_firebase.dart';
 import 'package:final_project_of_mobile/src/provider/data_provider_02.dart';
 import 'package:flutter/material.dart';
 

@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome'),
+        title: const Text('Car Wash'),
         centerTitle: true,
         titleTextStyle: const TextStyle(fontSize: 30.0),
         actions: <Widget>[
