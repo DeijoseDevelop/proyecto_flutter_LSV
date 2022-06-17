@@ -61,7 +61,7 @@ class _MenuState extends State<Menu> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile 02',
-            backgroundColor: Colors.yellowAccent,
+            backgroundColor: Color.fromARGB(203, 255, 255, 96),
           ),
         ],
         currentIndex: _selectedIndex,

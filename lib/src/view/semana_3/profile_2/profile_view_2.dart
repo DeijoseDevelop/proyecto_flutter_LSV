@@ -10,6 +10,7 @@ class ProfileView02 extends StatelessWidget {
     
 
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(251, 252, 252, 1),
       appBar: AppBar(
         backgroundColor: Colors.yellowAccent,
         centerTitle: true,

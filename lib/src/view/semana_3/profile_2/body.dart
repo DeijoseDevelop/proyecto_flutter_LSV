@@ -62,7 +62,7 @@ class Body02 extends StatelessWidget {
               _showAlert(context, _registro);
             },
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.yellow),
+              backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(150, 150, 150, 1)),
             ),
             child: const Text(
               'More Information',
