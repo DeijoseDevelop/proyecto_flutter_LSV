@@ -12,6 +12,10 @@ class _Animation3DState extends State<Animation3D> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Animation 3D'),
+        centerTitle: true,
+      ),
       body: BabylonJSViewer(
         src: 'assets/animations/reloading.glb',
       ),

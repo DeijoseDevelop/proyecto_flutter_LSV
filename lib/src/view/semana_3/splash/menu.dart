@@ -1,6 +1,7 @@
+import 'package:final_project_of_mobile/src/view/animations/animations.dart';
 import 'package:final_project_of_mobile/src/view/home_view.dart';
 import 'package:final_project_of_mobile/src/view/semana_2/firebase_list_02.dart';
-import 'package:final_project_of_mobile/src/view/semana_3/animation_3d.dart';
+import 'package:final_project_of_mobile/src/view/animations/animation_3d.dart';
 import 'package:final_project_of_mobile/src/view/semana_3/list_view_card/list_view_card.dart';
 import 'package:final_project_of_mobile/src/view/semana_3/profile_04/profile_04.dart';
 import 'package:final_project_of_mobile/src/view/semana_3/profile_2/profile_view_2.dart';
@@ -26,7 +27,7 @@ class _MenuState extends State<Menu> {
     /* ProfileView(),*/
     /* const ProfileView03(), */
     const ProfileView04(),
-    const Animation3D(),
+    const Animations(),
   ];
 
   void _onItemTapped(int index) {
@@ -65,7 +66,7 @@ class _MenuState extends State<Menu> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.animation),
-            label: 'Animation 3D',
+            label: 'Animations',
             backgroundColor: Color.fromARGB(202, 244, 244, 241),
           ),
         ],
