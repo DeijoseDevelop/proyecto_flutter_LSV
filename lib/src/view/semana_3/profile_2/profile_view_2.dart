@@ -7,8 +7,6 @@ class ProfileView02 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
-
     return Scaffold(
       backgroundColor: const Color.fromRGBO(251, 252, 252, 1),
       appBar: AppBar(
