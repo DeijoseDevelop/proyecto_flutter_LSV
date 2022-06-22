@@ -1,5 +1,3 @@
-import 'package:final_project_of_mobile/src/view/animations/animation_3d.dart';
-import 'package:final_project_of_mobile/src/view/animations/views/animation_01.dart';
 import 'package:flutter/material.dart';
 
 class Animations extends StatefulWidget {

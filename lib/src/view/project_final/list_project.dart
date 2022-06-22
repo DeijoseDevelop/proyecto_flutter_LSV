@@ -1,4 +1,4 @@
-import 'package:final_project_of_mobile/src/view/project_final/gallery_photos/gallery_provider.dart';
+//import 'package:final_project_of_mobile/src/view/project_final/gallery_photos/gallery_provider.dart';
 import 'package:flutter/material.dart';
 
 class ListProject extends StatelessWidget {

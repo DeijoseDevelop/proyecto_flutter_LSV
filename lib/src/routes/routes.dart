@@ -15,7 +15,7 @@ import 'package:final_project_of_mobile/src/view/semana_3/list_view_card/list_vi
 import 'package:final_project_of_mobile/src/view/animations/animation_3d.dart';
 import 'package:final_project_of_mobile/src/view/animations/views/animation_01.dart';
 import 'package:final_project_of_mobile/src/view/animations/views/animation_02.dart';
-import 'package:final_project_of_mobile/src/view/project_final/gallery_photos/galerry.dart';
+import 'package:final_project_of_mobile/src/view/project_final/gallery_photos/gallery.dart';
 
 
 Map<String, WidgetBuilder> getRoutes(){

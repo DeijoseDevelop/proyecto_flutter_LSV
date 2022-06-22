@@ -2,11 +2,7 @@ import 'package:final_project_of_mobile/src/view/animations/animations.dart';
 import 'package:final_project_of_mobile/src/view/home_view.dart';
 import 'package:final_project_of_mobile/src/view/project_final/list_project.dart';
 import 'package:final_project_of_mobile/src/view/semana_2/firebase_list_02.dart';
-import 'package:final_project_of_mobile/src/view/animations/animation_3d.dart';
-import 'package:final_project_of_mobile/src/view/semana_3/list_view_card/list_view_card.dart';
 import 'package:final_project_of_mobile/src/view/semana_3/profile_04/profile_04.dart';
-import 'package:final_project_of_mobile/src/view/semana_3/profile_2/profile_view_2.dart';
-import 'package:final_project_of_mobile/src/view/semana_3/profile_3/profile_view_3.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatefulWidget {

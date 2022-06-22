@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'dart:math';
+//import 'dart:math';
 
 class AnimatedContainerPage extends StatefulWidget {
   const AnimatedContainerPage({Key? key}) : super(key: key);
