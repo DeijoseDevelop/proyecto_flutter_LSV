@@ -17,7 +17,7 @@ class _Animation3DState extends State<Animation3D> {
         centerTitle: true,
       ),
       body: BabylonJSViewer(
-        src: 'assets/animations/reloading.glb',
+        src: 'assets/animations/Tren.glb',
       ),
     );
   }

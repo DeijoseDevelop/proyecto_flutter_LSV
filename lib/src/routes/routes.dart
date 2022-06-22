@@ -11,9 +11,11 @@ import 'package:final_project_of_mobile/src/view/activity_list_page.dart';
 import 'package:final_project_of_mobile/src/view/semana_2/firebase_list.dart';
 import 'package:final_project_of_mobile/src/view/semana_2/firebase_list_02.dart';
 import 'package:final_project_of_mobile/src/view/semana_3/splash/splash_screen.dart';
+import 'package:final_project_of_mobile/src/view/semana_3/list_view_card/list_view_card.dart';
 import 'package:final_project_of_mobile/src/view/animations/animation_3d.dart';
 import 'package:final_project_of_mobile/src/view/animations/views/animation_01.dart';
 import 'package:final_project_of_mobile/src/view/animations/views/animation_02.dart';
+import 'package:final_project_of_mobile/src/view/project_final/gallery_photos/galerry.dart';
 
 
 Map<String, WidgetBuilder> getRoutes(){
@@ -28,6 +30,8 @@ Map<String, WidgetBuilder> getRoutes(){
     '/lista': (BuildContext context) => const ActivityListPage(),
     '/listaFirebase' : (BuildContext context) => const FirebaseList(),
     '/listaFirebase2' : (BuildContext context) => const FirebaseList02(),
+    '/listaCustomCard' : (BuildContext context) => const ListViewCard(),
+    '/galleryList' : (BuildContext context) => const GalleryList(),
     '/animation3d' : (BuildContext context) => const Animation3D(),
     '/animation01' : (BuildContext context) => const Animation01(),
     '/animation02' : (BuildContext context) => const Animation02(),

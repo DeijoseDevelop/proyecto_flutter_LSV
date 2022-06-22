@@ -1,5 +1,6 @@
 import 'package:final_project_of_mobile/src/view/animations/animations.dart';
 import 'package:final_project_of_mobile/src/view/home_view.dart';
+import 'package:final_project_of_mobile/src/view/project_final/list_project.dart';
 import 'package:final_project_of_mobile/src/view/semana_2/firebase_list_02.dart';
 import 'package:final_project_of_mobile/src/view/animations/animation_3d.dart';
 import 'package:final_project_of_mobile/src/view/semana_3/list_view_card/list_view_card.dart';
@@ -23,7 +24,7 @@ class _MenuState extends State<Menu> {
     const HomeView(),
     /* FirebaseList(), */
     const FirebaseList02(),
-    const ListViewCard(),
+    const ListProject(),
     /* ProfileView(),*/
     /* const ProfileView03(), */
     const ProfileView04(),
@@ -56,7 +57,7 @@ class _MenuState extends State<Menu> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.list_alt),
-            label: 'List View',
+            label: 'List Project',
             backgroundColor: Color.fromARGB(255, 215, 217, 218),
           ), 
           BottomNavigationBarItem(

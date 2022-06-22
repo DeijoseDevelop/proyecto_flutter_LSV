@@ -7,12 +7,12 @@ class Body04 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        width: MediaQuery.of(context).size.width - 120,
+        width: MediaQuery.of(context).size.width - 100,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             SizedBox(height: MediaQuery.of(context).size.height * 0.1),
-            _row(Icons.mail, 'Email'),
+            _row(Icons.mail, 'thebigdeijose@gmail.com'),
             SizedBox(height: MediaQuery.of(context).size.height * 0.04),
             _row(Icons.phone_android, '+57 300 7887902'),
             SizedBox(height: MediaQuery.of(context).size.height * 0.04),
